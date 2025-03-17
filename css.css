@@ -140,6 +140,23 @@ tr:hover {
     display: block;
 }
 
+/* Seção IRPF 2025 */
+#irpf-2025 {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#irpf-2025 h2, #irpf-2025 h3 {
+    color: #003366;
+}
+
+#irpf-2025 ul {
+    font-size: 1rem;
+}
+
 /* Rodapé */
 footer {
     background: url('footer-bg.jpg') no-repeat center center/cover;
