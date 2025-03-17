@@ -6,9 +6,54 @@
     <title>RSP Contabilidade - Serviços Contábeis</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #333;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+        }
+        .tab-button {
+            padding: 10px 20px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
         <div class="container">
             <div class="logo">
@@ -17,89 +62,49 @@
             <nav>
                 <ul>
                     <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="https://wa.me/5551998258820?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20RSP%20Contabilidade" target="_blank">Contato: (51) 99825-8820</a></li>
+                    <li><a href="https://wa.me/5551998258820" target="_blank">Contato: (51) 99825-8820</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Conteúdo Principal -->
+    
     <main class="container">
-        <!-- Seção de Serviços -->
         <section id="servicos">
             <h2>Nossos Serviços</h2>
-            <div class="servico">
+            <div class="tabs">
+                <button class="tab-button" onclick="showTab('empresas')">Empresas</button>
+                <button class="tab-button" onclick="showTab('declaracoes')">Declarações</button>
+            </div>
+            <div id="empresas" class="tab-content active">
                 <h3>Abertura de Empresa</h3>
-                <p>Oferecemos suporte completo para abertura de empresas, desde o registro até a legalização.</p>
-            </div>
-            <div class="servico">
-                <h3>Declaração de Imposto de Renda</h3>
-                <p>Realizamos a declaração do IRPF e IRPJ de forma segura e eficiente.</p>
-            </div>
-            <div class="servico">
-                <h3>Abertura de MEI</h3>
-                <p>Facilitamos o processo de abertura e regularização do MEI.</p>
-            </div>
-            <div class="servico">
-                <h3>Declaração MEI</h3>
-                <p>Auxiliamos na declaração anual do MEI, garantindo conformidade com a lei.</p>
-            </div>
-            <div class="servico">
+                <p>Suporte completo para abertura e legalização de empresas.</p>
                 <h3>Fechamento de Empresas</h3>
-                <p>Realizamos o encerramento de empresas de forma ágil e segura.</p>
+                <p>Encerramento de empresas de forma ágil e segura.</p>
             </div>
-        </section>
-
-        <!-- Seção de Informações sobre o IRPF 2025 -->
-        <section id="irpf-2025">
-            <h2>Declaração do IRPF 2025</h2>
-            <h3>Quem Deve Declarar?</h3>
-            <p>A obrigatoriedade de declarar o Imposto de Renda depende dos rendimentos recebidos em 2024. Confira os critérios:</p>
-            <ul>
-                <li><strong>Rendimentos tributáveis:</strong> Acima de R$ 33.888,00</li>
-                <li><strong>Receita bruta da atividade rural:</strong> Acima de R$ 169.440,00</li>
-                <li><strong>Bens e direitos (valor total):</strong> Acima de R$ 500.000,00</li>
-                <li><strong>Rendimentos isentos/não tributáveis:</strong> Acima de R$ 40.000,00</li>
-            </ul>
-            <h3>Calendário de Restituições 2025</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Lote</th>
-                        <th>Data de Pagamento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Primeiro lote</td>
-                        <td>30 de maio de 2025</td>
-                    </tr>
-                    <tr>
-                        <td>Segundo lote</td>
-                        <td>30 de junho de 2025</td>
-                    </tr>
-                    <tr>
-                        <td>Terceiro lote</td>
-                        <td>31 de julho de 2025</td>
-                    </tr>
-                    <tr>
-                        <td>Quarto lote</td>
-                        <td>29 de agosto de 2025</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="declaracoes" class="tab-content">
+                <h3>Declaração de Imposto de Renda</h3>
+                <p>IRPF e IRPJ com segurança e eficiência.</p>
+                <h3>Declaração MEI</h3>
+                <p>Regularização e declaração anual do MEI.</p>
+            </div>
         </section>
     </main>
-
-    <!-- Rodapé -->
+    
     <footer>
         <div class="container">
             <h3>Precisa de Ajuda?</h3>
-            <p>Entre em contato conosco via WhatsApp para mais informações:</p>
-            <a href="https://wa.me/5551998258820?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20RSP%20Contabilidade" class="whatsapp-button" target="_blank">
+            <p>Fale conosco via WhatsApp:</p>
+            <a href="https://wa.me/5551998258820" class="whatsapp-button" target="_blank">
                 <i class="fab fa-whatsapp"></i> Enviar Mensagem
             </a>
         </div>
     </footer>
+    
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
