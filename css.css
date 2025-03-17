@@ -26,21 +26,15 @@ header .logo img {
     height: 50px;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul li {
-    position: relative;
     margin-left: 20px;
 }
 
@@ -48,38 +42,6 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
-    padding: 10px;
-    display: block;
-}
-
-header nav ul li a:hover {
-    background-color: #003366;
-    border-radius: 5px;
-}
-
-/* Submenu */
-header nav ul li .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #004a8d;
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1000;
-}
-
-header nav ul li:hover .submenu {
-    display: block;
-}
-
-header nav ul li .submenu li {
-    margin: 0;
-}
-
-header nav ul li .submenu li a {
-    padding: 10px;
-    white-space: nowrap;
 }
 
 /* Seções */
@@ -137,17 +99,9 @@ tr:hover {
 footer {
     background-color: #004a8d;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
-}
-
-footer h3 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-footer p {
-    margin: 10px 0;
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
 /* Botão do WhatsApp */
