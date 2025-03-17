@@ -51,6 +51,19 @@
         .active {
             display: block;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
     </style>
 </head>
 <body>
@@ -75,24 +88,48 @@
                 <button class="tab-button" onclick="showTab('empresas')">Empresas</button>
                 <button class="tab-button" onclick="showTab('declaracoes')">Declarações</button>
             </div>
+
+            <!-- Aba de Empresas -->
             <div id="empresas" class="tab-content active">
                 <h3>Abertura de Empresa</h3>
-                <p>Suporte completo para abertura e legalização de empresas.</p>
+                <p>Suporte completo para abertura e legalização de empresas, incluindo:</p>
+                <ul>
+                    <li>Registro no CNPJ.</li>
+                    <li>Escolha do regime tributário.</li>
+                    <li>Elaboração de contrato social.</li>
+                </ul>
+
+                <h3>Abertura de MEI</h3>
+                <p>Regularização e formalização do Microempreendedor Individual (MEI):</p>
+                <ul>
+                    <li>Registro no CNPJ.</li>
+                    <li>Orientação sobre obrigações fiscais.</li>
+                    <li>Emissão de DAS (Documento de Arrecadação do Simples Nacional).</li>
+                </ul>
+
                 <h3>Fechamento de Empresas</h3>
-                <p>Encerramento de empresas de forma ágil e segura.</p>
+                <p>Encerramento de empresas de forma ágil e segura, incluindo:</p>
+                <ul>
+                    <li>Baixa no CNPJ.</li>
+                    <li>Regularização de pendências fiscais.</li>
+                    <li>Encerramento de contratos e obrigações trabalhistas.</li>
+                </ul>
             </div>
+
+            <!-- Aba de Declarações -->
             <div id="declaracoes" class="tab-content">
-                <h3>Declaração de Imposto de Renda</h3>
-                <p>IRPF e IRPJ com segurança e eficiência.</p>
-                <h3>Quem Deve Declarar o IRPF em 2025?</h3>
+                <h3>Declaração de Imposto de Renda (IRPF e IRPJ)</h3>
+                <p>Realizamos a declaração de imposto de renda para pessoas físicas e jurídicas com segurança e eficiência.</p>
+
+                <h4>Quem Deve Declarar o IRPF em 2025?</h4>
                 <p>A obrigatoriedade de declarar o Imposto de Renda depende dos rendimentos recebidos em 2024. Confira os critérios:</p>
-                <h4>Limites para 2025:</h4>
                 <ul>
                     <li><strong>Rendimentos tributáveis:</strong> Acima de R$ 33.888,00</li>
                     <li><strong>Receita bruta da atividade rural:</strong> Acima de R$ 169.440,00</li>
                     <li><strong>Bens e direitos (valor total):</strong> Acima de R$ 500.000,00</li>
                     <li><strong>Rendimentos isentos/não tributáveis:</strong> Acima de R$ 40.000,00</li>
                 </ul>
+
                 <h4>Outros Critérios de Obrigatoriedade:</h4>
                 <ul>
                     <li>Possuir bens ou direitos acima de R$ 500.000,00.</li>
@@ -101,8 +138,8 @@
                     <li>Ter residido no exterior e recebido rendimentos no Brasil.</li>
                 </ul>
                 <p><strong>Observação:</strong> Mesmo que não seja obrigatório, você pode optar por declarar para obter restituição ou compensar prejuízos.</p>
-                
-                <h3>Calendário de Restituições do IRPF 2024</h3>
+
+                <h4>Calendário de Restituições do IRPF 2025</h4>
                 <p>A Receita Federal libera a restituição do Imposto de Renda em lotes. Confira as datas:</p>
                 <table>
                     <thead>
@@ -118,18 +155,19 @@
                         </tr>
                         <tr>
                             <td>Segundo lote</td>
-                            <td>30 de junho de 2024</td>
+                            <td>30 de junho de 2025</td>
                         </tr>
                         <tr>
                             <td>Terceiro lote</td>
-                            <td>31 de julho de 2024</td>
+                            <td>31 de julho de 2025</td>
                         </tr>
                         <tr>
                             <td>Quarto lote</td>
-                            <td>29 de agosto de 2024</td>
+                            <td>29 de agosto de 2025</td>
                         </tr>
                     </tbody>
                 </table>
+
                 <h4>Quem Recebe Primeiro?</h4>
                 <p>A prioridade para receber a restituição segue a ordem estabelecida pela Receita Federal:</p>
                 <ol>
@@ -139,9 +177,14 @@
                     <li><strong>Quarto Grupo:</strong> Demais contribuintes, conforme a ordem de entrega da declaração.</li>
                 </ol>
                 <p><strong>Dica:</strong> Envie sua declaração o mais cedo possível para aumentar suas chances de receber a restituição nos primeiros lotes.</p>
-                
+
                 <h3>Declaração MEI</h3>
-                <p>Regularização e declaração anual do MEI.</p>
+                <p>Regularização e declaração anual do MEI, incluindo:</p>
+                <ul>
+                    <li>Declaração Anual do Simples Nacional (DASN-SIMEI).</li>
+                    <li>Orientação sobre obrigações fiscais e trabalhistas.</li>
+                    <li>Regularização de pendências.</li>
+                </ul>
             </div>
         </section>
     </main>
