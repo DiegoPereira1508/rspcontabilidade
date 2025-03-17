@@ -1,0 +1,171 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004a8d;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #003366;
+    border-radius: 5px;
+}
+
+/* Submenu */
+header nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #004a8d;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+header nav ul li:hover .submenu {
+    display: block;
+}
+
+header nav ul li .submenu li {
+    margin: 0;
+}
+
+header nav ul li .submenu li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+/* Seções */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #004a8d;
+    margin-top: 0;
+}
+
+h3 {
+    color: #004a8d;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #004a8d;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Rodapé */
+footer {
+    background-color: #004a8d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
